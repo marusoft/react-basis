@@ -1,0 +1,40 @@
+.headerContainer {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 60px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.logo {
+  max-width: 50px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.navItems {
+  display: flex;
+  gap: 1.5rem;
+}
+.navItem {
+  font-size: 1.2rem;
+}
+.navItem:hover {
+  border-bottom: 2px solid rebeccapurple;
+  color: rebeccapurple;
+}
+
+.bars {
+  display: none;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .bars {
+    display: block;
+  }
+  .navItem {
+    display: none;
+  }
+}
