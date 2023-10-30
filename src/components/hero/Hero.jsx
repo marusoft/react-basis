@@ -1,4 +1,5 @@
 import styles from "./hero.module.css";
+import Button from "../button/Button";
 
 const Hero = () => {
   return (
@@ -9,7 +10,7 @@ const Hero = () => {
           Welcome to Marusoft Academy where you will learn the most in-demand
           skills to become a world-class Software Engineer.
         </p>
-        <button className={styles.btn}>Learn More</button>
+        <Button url="/course" text="Learn More" />
       </section>
       <section className={styles.rightContainer}>
         <img src="/images/hero.jpeg" alt="hero avatar" />

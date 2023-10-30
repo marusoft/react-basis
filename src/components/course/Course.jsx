@@ -1,5 +1,6 @@
 import styles from "./course.module.css";
 import courses from "../../course";
+import Button from "../button/Button";
 
 const Course = () => {
   return (
@@ -7,13 +8,16 @@ const Course = () => {
       <h2 className={styles.courseTitle}>Courses</h2>
       <section className={styles.courseContainer}>
         {courses.map((course) => (
-          <section id={course.id} className={styles.course}>
+          <section key={course.id} className={styles.course}>
             <section className={styles.courseContent}>
               <h3>{course.courseTitle}</h3>
               <p>{course.courseDescription}</p>
-              <div className={styles.btn}>
-                <button>Apply</button>
-                <button>View Course</button>
+              <div style={{
+                display: "flex",
+                gap: ".8rem"
+              }}>
+                <Button url="/" text="Apply" />
+                <Button url="/" text="View Course" />
               </div>
             </section>
           </section>

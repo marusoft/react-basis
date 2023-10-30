@@ -1,6 +1,13 @@
 import "./App.css";
 
-import { Navbar, Hero, Course } from "./components/index";
+import {
+  Navbar,
+  Hero,
+  Course,
+  ProductList,
+  Users,
+  Register,
+} from "./components/index";
 
 const App = () => {
   return (
@@ -8,6 +15,9 @@ const App = () => {
       <Navbar />
       <Hero />
       <Course />
+      <ProductList />
+      <Users />
+      <Register />
     </div>
   );
 };

@@ -21,7 +21,7 @@
   font-weight: 400;
 }
 .btn {
-  max-width: max-content;
+  /* max-width: max-content; */
   padding: 20px 25px;
   border: none;
   background-color: rebeccapurple;

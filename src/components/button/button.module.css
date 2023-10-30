@@ -1,0 +1,14 @@
+.btn {
+  max-width: max-content;
+  padding: 20px 25px;
+  border: none;
+  background-color: rebeccapurple;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn:hover {
+  border: 1px solid rebeccapurple;
+  background-color: #fff;
+  color: rebeccapurple;
+}
